@@ -1841,6 +1841,8 @@ GPLv3
 
 lightgallery/angular
 
+lightgallery/plugins/video
+
 media-typer
 MIT
 (The MIT License)

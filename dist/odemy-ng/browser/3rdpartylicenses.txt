@@ -903,6 +903,8 @@ GPLv3
 
 lightgallery/angular
 
+lightgallery/plugins/video
+
 ngx-countup
 MIT
 
