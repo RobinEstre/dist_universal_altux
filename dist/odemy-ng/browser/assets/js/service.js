@@ -3,7 +3,7 @@ import { customerInfo , freeze } from "./config";
 function greet(requestData) {
     //Culqi.publicKey = "pk_live_fd474cb65b5a677d"; //defecto prod
     //Culqi.publicKey = "pk_test_1f79139005666a3d"; //defecto prueba
-    Culqi.publicKey = "pk_test_1f79139005666a3d"; //defecto prod
+    Culqi.publicKey = "pk_live_fd474cb65b5a677d"; //defecto prod
     Culqi.settings({
         currency: requestData.currency_code,
         amount: requestData.amount,
