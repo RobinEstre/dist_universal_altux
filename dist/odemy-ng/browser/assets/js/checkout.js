@@ -1,5 +1,5 @@
 import { customerInfo , freeze } from "./config";
-import "./culqi3ds.js";
+//import "./culqi3ds.js";
 import Swal from "sweetalert2";
 import Service from "./generates";
 
