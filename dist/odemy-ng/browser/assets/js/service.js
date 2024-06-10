@@ -7,21 +7,31 @@ function greet(requestData) {
     Culqi.settings({
         currency: requestData.currency_code,
         amount: requestData.amount,
-        title: "ALTUX - ifinity ♾️",
+        title: "ALTUX | Infinity ♾️",
         order: requestData.order_number,
-        // xculqirsaid: 'd3fd4e3d-7252-4502-998d-2a58be9c9a88',
-        // rsapublickey: '-----BEGIN PUBLIC KEY-----'+
-        // 'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvsTXaudGcCa11FcROsJ0yIPAA'+
-        // 'ypAZZyR2f//Py33dXsfVOPmbPu2YcM7t6x5GHKtVF3CLnCSMO+wsLA3KCxPr5oX4'+
-        // 'lxua/wiwZOVY+ylw14fk/5heHmqJrZD9m4m5Brx8DnYLX91zX22x+RWp9Gf+bLQb'+
-        // 'ifcfNUAmC5TTR6JgQwIDAQAB'+
-        // '-----END PUBLIC KEY-----',
+        xculqirsaid: 'd3fd4e3d-7252-4502-998d-2a58be9c9a88',
+        rsapublickey: '-----BEGIN PUBLIC KEY-----'+
+        'MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCvsTXaudGcCa11FcROsJ0yIPAA'+
+        'ypAZZyR2f//Py33dXsfVOPmbPu2YcM7t6x5GHKtVF3CLnCSMO+wsLA3KCxPr5oX4'+
+        'lxua/wiwZOVY+ylw14fk/5heHmqJrZD9m4m5Brx8DnYLX91zX22x+RWp9Gf+bLQb'+
+        'ifcfNUAmC5TTR6JgQwIDAQAB'+
+        '-----END PUBLIC KEY-----',
     });
     Culqi.options({
+        style: {
+            logo: 'https://web-altux-files.s3.amazonaws.com/img/logo_altux.jpg',
+            bannerColor: '', // hexadecimal
+            buttonBackground: '', // hexadecimal
+            menuColor: '', // hexadecimal
+            linksColor: '', // hexadecimal
+            buttonText: '', // texto que tomará el botón
+            buttonTextColor: '', // hexadecimal
+            priceColor: '' // hexadecimal
+        },
         lang: "auto",
         paymentMethods: requestData.paymentMethods,
         installments: true,
-        logo: "https://static.culqi.com/v2/v2/static/img/logo.png"
+        logo: 'https://web-altux-files.s3.amazonaws.com/img/logo_altux.jpg',
     });
     Culqi.open();
     return true;
