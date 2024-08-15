@@ -15,7 +15,7 @@ const freeze ={
     'C7MDDgdCFrHODOp7aXwjG8NaiCbiymyBglXyEN28hLvgHpvZmAn6KFo0lMGuKnz8'+
     'HiuTfpBl6HpD6+02SQIDAQAB'+
     '-----END PUBLIC KEY-----',
-    URL_BASE: "https://api.altux.edu.pe/api/",
+    URL_BASE: "https://aula.altux.edu.pe/api/",
 };
 
 const customerInfo = {
